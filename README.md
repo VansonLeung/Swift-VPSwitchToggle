@@ -26,9 +26,9 @@ https://github.com/VansonLeung/Swift-VPSwitchToggle/assets/1129695/2d2487b0-d38e
 
 ## Installation
 
-Install Swift Package in SPM, URL:
+Install Swift Package in SPM:
 
-`https://github.com/VansonLeung/Swift-VPSwitchToggle.git`
+`.package(url: "[https://github.com/snowplow/snowplow-ios-tracker.git](https://github.com/VansonLeung/Swift-VPSwitchToggle.git)", from: "1.0.1")`
 
 
 ## Usage
