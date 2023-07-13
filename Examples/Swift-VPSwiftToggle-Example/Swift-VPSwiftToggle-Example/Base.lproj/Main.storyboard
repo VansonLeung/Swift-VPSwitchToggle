@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="root" id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_VPSwiftToggle_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8D-O2-Ozc">
+                                <rect key="frame" x="16" y="46" width="361" height="759"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-gX-9LS">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="688"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsm-Eu-zdM">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift_VPSwitchToggle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-sl-Rb7">
+                                                        <rect key="frame" x="20" y="20" width="321" height="88"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="yfO-sl-Rb7" firstAttribute="top" secondItem="nsm-Eu-zdM" secondAttribute="top" constant="20" id="LCB-1o-sjE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yfO-sl-Rb7" secondAttribute="bottom" constant="20" id="UVc-Nw-gLN"/>
+                                                    <constraint firstItem="yfO-sl-Rb7" firstAttribute="leading" secondItem="nsm-Eu-zdM" secondAttribute="leading" constant="20" id="gnl-DN-j2h"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yfO-sl-Rb7" secondAttribute="trailing" constant="20" id="rIN-OX-fJ6"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mKU-PF-fqo">
+                                                <rect key="frame" x="0.0" y="128" width="361" height="100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lP2-YF-8Pc" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemTealColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" systemColor="systemYellowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_backgroundImage" value="f_switch_bg_moon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_backgroundImage" value="f_switch_bg_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_foregroundImage" value="f_switch_button_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_foregroundImage" value="f_switch_button_moon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="fade"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="dhN-di-4qd"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="euW-N0-tgW">
+                                                <rect key="frame" x="0.0" y="228" width="361" height="80"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWv-OL-bbV" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemTealColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" systemColor="systemYellowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_backgroundImage" value="f_switch_bg_moon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_backgroundImage" value="f_switch_bg_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_foregroundImage" value="f_switch_button_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_foregroundImage" value="f_switch_button_moon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="horizontal"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5C-6y-Ge4" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemTealColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" systemColor="systemYellowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_backgroundImage" value="f_switch_bg_moon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_backgroundImage" value="f_switch_bg_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_foregroundImage" value="f_switch_button_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_foregroundImage" value="f_switch_button_moon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="horizontalReversed"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="lBT-Ek-rbZ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-rM-kA0">
+                                                <rect key="frame" x="0.0" y="308" width="361" height="100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Lw-S2-FOQ" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemTealColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" systemColor="systemYellowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_backgroundImage" value="f_switch_bg_moon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_backgroundImage" value="f_switch_bg_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_foregroundImage" value="f_switch_button_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_foregroundImage" value="f_switch_button_moon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="vertical"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chp-q8-plH" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemTealColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" systemColor="systemYellowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_backgroundImage" value="f_switch_bg_moon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_backgroundImage" value="f_switch_bg_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_off_foregroundImage" value="f_switch_button_sun"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="ib_state_on_foregroundImage" value="f_switch_button_moon"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="verticalReversed"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="zJy-5I-214"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PdP-Mb-W88">
+                                                <rect key="frame" x="0.0" y="408" width="361" height="100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rG-f1-Mlx" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" systemColor="systemGreenColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="fade"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="cVI-SE-YmR"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mrU-8X-Axd">
+                                                <rect key="frame" x="0.0" y="508" width="361" height="80"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYg-At-g45" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="horizontal"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" systemColor="systemGreenColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aA-mm-W37" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="80"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="horizontalReversed"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" systemColor="systemOrangeColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="MZx-aC-ckO"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-qh-zVe">
+                                                <rect key="frame" x="0.0" y="588" width="361" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHG-ey-5rw" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="vertical"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" systemColor="systemOrangeColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" systemColor="systemCyanColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtb-iw-ImR" customClass="VPSwitchToggle_IBDesignable" customModule="Swift_VPSwitchToggle">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="ib_backgroundImageOrder" value="verticalReversed"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_backgroundColor">
+                                                                <color key="value" systemColor="systemMintColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_backgroundColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_off_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="ib_state_on_foregroundColor">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ib_on" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="ib_widgetSize">
+                                                                <size key="value" width="150" height="60"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="ib_widgetForegroundMargin">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Rz8-eY-8ll"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="17w-c9-oWj">
+                                                <rect key="frame" x="0.0" y="638" width="361" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3AF-6o-fjF"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tr7-1Z-9be" firstAttribute="leading" secondItem="c4P-gX-9LS" secondAttribute="leading" id="8gn-Bv-qvz"/>
+                                    <constraint firstItem="tr7-1Z-9be" firstAttribute="top" secondItem="c4P-gX-9LS" secondAttribute="top" id="UYH-bt-zSo"/>
+                                    <constraint firstItem="c4P-gX-9LS" firstAttribute="trailing" secondItem="tr7-1Z-9be" secondAttribute="trailing" id="a1U-np-NJA"/>
+                                    <constraint firstItem="c4P-gX-9LS" firstAttribute="bottom" secondItem="tr7-1Z-9be" secondAttribute="bottom" id="dmx-4K-JR1"/>
+                                    <constraint firstItem="c4P-gX-9LS" firstAttribute="width" secondItem="g9R-sN-g5B" secondAttribute="width" id="mur-nF-rth"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tr7-1Z-9be"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="g9R-sN-g5B"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="csv" destination="17w-c9-oWj" id="aaQ-A9-QnY"/>
+                        <outlet property="sv" destination="c4P-gX-9LS" id="j5L-IG-Jl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f_switch_bg_moon" width="302" height="120"/>
+        <image name="f_switch_bg_sun" width="302" height="120"/>
+        <image name="f_switch_button_moon" width="100" height="100"/>
+        <image name="f_switch_button_sun" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
